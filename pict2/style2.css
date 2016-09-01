@@ -1,12 +1,12 @@
 
 body {
 	padding: 15px;
-	background-color: #363637;
+	background-color: #453D3A;
 }
 #blok1 {
 	width: 25%;
 	height: 500px;
-	background-color: #A4A4A4;
+	background-color: #8F847A;
 	float: left;
 }
 
@@ -19,6 +19,6 @@ body {
 #blok3 {
 	width: 25%;
 	height: 550px;
-	background-color: #A4A4A4;
+	background-color: #8F847A;
 	float: left;
 }
