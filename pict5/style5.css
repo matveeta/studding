@@ -3,22 +3,16 @@ body {
 	padding: 15px;
 	background-color: #363637;
 }
-#blok1 {
+#menu {
 	width: 25%;
-	height: 500px;
+	height: 600px;
 	background-color: #A4A4A4;
 	float: left;
 }
 
-#blok2 {
-	width: 50%;
-	height: 600px;
+#blok1 {
+	width: 75%;
+	min-height: 600px;
 	background-color: #ffffff;
-	float: left;
-}
-#blok3 {
-	width: 25%;
-	height: 550px;
-	background-color: #A4A4A4;
 	float: left;
 }
