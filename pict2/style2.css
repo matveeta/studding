@@ -1,0 +1,24 @@
+
+body {
+	padding: 15px;
+	background-color: #453D3A;
+}
+#blok1 {
+	width: 25%;
+	height: 500px;
+	background-color: #8F847A;
+	float: left;
+}
+
+#blok2 {
+	width: 50%;
+	height: 600px;
+	background-color: #ffffff;
+	float: left;
+}
+#blok3 {
+	width: 25%;
+	height: 550px;
+	background-color: #8F847A;
+	float: left;
+}

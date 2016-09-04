@@ -1,0 +1,36 @@
+
+body {
+	padding: 5px;
+	background-color: #453D3A;
+}
+
+#blok1 {
+	width: 19%;
+	min-height: 500px;
+	background-color: #E1DCD8;
+	float: left;
+	margin: 5px;
+}
+
+#blok2 {
+	width: 19%;
+	min-height: 500px;
+	background-color: #E1DCD8;
+	float: left;
+	margin: 5px;
+}
+#blok3 {
+	width: 39%;
+	min-height: 600px;
+	background-color: #ffffff;
+	float: left;
+	margin: 5px;
+}
+#blok4 {
+	width: 19%;
+	min-height: 500px;
+	background-color: #8F847A;
+	float: left;
+	margin: 5px 0px 5px 5px;
+
+}

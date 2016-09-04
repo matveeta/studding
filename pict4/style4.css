@@ -1,0 +1,17 @@
+
+body {
+	padding: 15px;
+	background-color: #453D3A;
+}
+
+#blok1 {
+	width: 600px;
+	height: 400px;
+	background-color: #ffffff;
+	position: absolute;
+	left: 400px;
+	bottom: 200px;
+
+
+}
+
