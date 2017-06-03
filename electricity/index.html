@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+	<meta charset="utf-8">
+	<script src="script(funct).js" asinc></script>
+	<style type="text/css">
+		*, html, body{
+			margin: 0;
+			padding: 0;
+			line-height: 1.5;
+		}
+
+		input{
+			margin: 0 5em;
+		}
+
+		input:hover{
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		}
+
+		p, #result{
+			
+			padding: 2em 4em;
+			font-size: 16px;
+			font-weight: bold;
+			font-style: italic;
+		}
+		span{
+			padding-left: 4em;
+    		line-height: 2;
+		}
+
+		#calc_sum{
+			padding: 0 2em;
+		}
+
+
+
+	</style>
+
+</head>
+<body>
+	<p>Розрахунок вартості використаної Електроенергії</p>
+	<span>Останні показники лічильника? кВт</span><br>
+	<input id="lastMeter" type="" name="">
+	<br>
+	<span>Теперишні показники лічильника? кВт</span>
+	<br>
+	<input id="newMeter" type="" name="">
+	<br>
+	<br>
+	<input type="button" value="OK" id="calc_sum" onclick="Calculate ()">
+	<br>
+
+	<br><input id="sum" type="" name="">
+
+	<div id="result"></div>
+
+
+
+
+</body>
+</html>
