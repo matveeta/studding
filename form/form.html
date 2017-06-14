@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Форма заявки</title>
+</head>
+<body>
+	<form action="sendform.html">
+		<table class="form_table">
+			<tr>
+				<td colspan="2" class="main"> Оформить заявку на тур</td>
+			</tr>
+			<tr>
+				<td class="right">Ф.И.О*</td>
+				<td><input type="text" name="name" placeholder="Как Вас зовут?" required> </td>
+			</tr>
+			<tr>
+				<td class="right">Ваш пол</td>
+				<td> 
+					<input type="radio" name="gender"> M
+					<input type="radio" name="gender"> Ж
+				</td>
+			</tr>
+			<tr>
+				<td class="right">Сколько Вам лет? </td>
+				<td> <input type="text" name="old"></td>
+			</tr>
+			<tr>
+				<td class="right">Желаемый уровень комфорта</td>
+				<td> 
+					<select >
+						<option>2*</option>
+						<option>3*</option>
+						<option>4*</option>
+						<option>5*</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="right">Наличие Шенгенской Визи?*</td>
+				<td> 
+					<input type="radio" name="pasp" required>Да
+					<input type="radio" name="pasp" required="">Нет
+				</td>
+			</tr>
+			<tr>
+				<td class="right">Паспорт</td>
+				<td> 
+					<input type="text" placeholder="Серия" size="2" maxlength="2">
+					<input type="text" placeholder="Номер" size="6" maxlength="6">
+				</td>
+			</tr>
+			<tr>
+				<td class="right">Паспорт действителен до</td>
+				<td> 
+					<input type="text" placeholder="дд.мм.гггг" size="10" maxlength="10">
+				</td>
+			</tr>
+			<tr>
+				<td class="right">Какие места Вы хотели бы посетить?</td>
+				<td > 
+					<input type="checkbox" name="place">Дом Висенс
+					<input type="checkbox" name="place">Дворец Гуэля
+					<input type="checkbox" name="place">Церковь Святого Семейства
+					</br>
+					<input type="checkbox" name="place">Дом Кальвет
+					<input type="checkbox" name="place">Парк Гуэля
+					<input type="checkbox" name="place">Дом Бальо
+				</td>
+			</tr>
+			<tr>
+				<td class="right">Телефон для связи*</td>
+				<td> 
+					<select>
+						<option>-</option>
+						<option>+380</option>
+					</select>
+					<input type="tel" size="9" maxlength="9" required>
+				</td>
+			</tr>
+				<td class="right">E-mail*</td>
+				<td> 
+					<input type="email" size="10" placeholder="e-mail" required>
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" class="main"> 
+					<input class="button" type="reset" value="Очистить">
+					<input class="button" type="submit" value="Отправить!">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

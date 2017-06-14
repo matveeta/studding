@@ -1,0 +1,60 @@
+body.index {
+	background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);
+	font-family: verdana;
+	font-size: 14px;
+	margin: 50px;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: justify;
+	font-size: 18px;
+}
+
+ul li {
+	color: #178397;
+	margin: 0 0 0 30px;
+}
+.mainimg{
+	width: 80%;
+	margin: 0 10%; 
+}
+
+table.form_table {
+	text-align: justify;
+	width: 60%;
+	border: 1px solid black;
+	font-size: 20px;
+	font-family: 'Lora', serif;
+	padding: 10px;background: radial-gradient(at top, #FEFFFF, #A7CECC);
+	margin: 0 auto;
+}
+td{
+		border: 1px solid black;
+}
+
+td.right{
+	text-align: right;
+}
+
+td.main{
+	text-align: center;
+	height: 40px;
+}
+
+input[required] {
+	border-color: #2E017F;
+}
+
+p.send{
+	width: 50%;
+	height: 600px;
+	font-family: 'Lora', serif;
+	font-size: 25px;
+	color:#0B353C;
+	opacity: 0.6;
+	margin: 0 auto;
+	padding: 150px 0 0 0;
+	text-align: center;
+
+}
