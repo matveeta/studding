@@ -26,7 +26,6 @@ function Gallery (sSelector) {
 
 	g.showPreview = function () {
 		//показать блок превью
-		//console.log('OK');
 
 		var picture = $(this);
 		
@@ -44,10 +43,6 @@ function Gallery (sSelector) {
 	g.closePreview = function (event) {
 		//скріть блок превью
 
-		//console.log(this); //не дает ответ куда мі кликнули, дает только родительский класс
-		//console.log($(event.target).attr('class')); // дает ответ куда мі кликнули
-		//$(event.target) - єлемент, которій инициировал собітие
-		// (используется, когда есть вложенности, н-р picture лежит в дивах)
 		g.stop();
 		if (!event || $(event.target).hasClass('preview')) {
 			g.preview.removeClass('preview_shown');
@@ -66,7 +61,7 @@ function Gallery (sSelector) {
 			g.current = g.max- 1;
 		}
 
-		//g.display(g.pictures.eq(g.current)); простая запись:
+		
 		g.display(g.gallery.find(".picture:eq(" + g.current + ")"));
 
 	};
@@ -111,7 +106,7 @@ function Gallery (sSelector) {
 		g.closePreview();
 
 		};
-		//g.stop();
+		
 
 	};
 
@@ -149,27 +144,17 @@ function Gallery (sSelector) {
 
 
 //собітия!!!
-//1. при клике на картинку показать блок с увеличеной картинкой
+
 g.pictures.click(g.showPreview);
-
-//2.  при клике на картинку закріть блок с увеличеной картинкой
 g.preview.click(g.closePreview);
-
-//3.при клике на стрелку > показать предідущую картинкой
 g.arrowPrev.click(g.showPrevious);
-
-//4.при клике на стрелку < показать следующую картинкой
-
 g.arrowNext.click(g.showNext);
 
 $('body').keyup(g.escclosePreview);
-
 $('body').keyup(g.rightShowNext);
-
 $('body').keyup(g.leftShowNext);
 
 g.previewImage.click(g.showNext);
-
 g.startBtn.click(g.start);
 g.stopBtn.click(g.stop);
 
