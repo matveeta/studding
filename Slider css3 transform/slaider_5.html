@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Slaider CSS3</title>
+
+	<style type="text/css">
+		
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+		/*	background-color: #fc6;*/
+			width: 210px;
+			height: 140px;
+			position: relative;
+			margin: 100px auto;
+			perspective: 1000px;
+		}
+
+		#carusel {
+			/*background-color: #daf;*/
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			transform-style: preserve-3d;
+			transition: all 1s;
+			transform: rotateY(0);
+		}
+
+		#carusel figure{
+			background-color: rgba(0, 100, 100, 0.4);
+			display: block;
+			margin: 0;
+			width: 250px;
+			height: 250px;
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			border: 2px solid #800;
+		}
+
+
+		#carusel figure:nth-child(1){
+			transform: rotateY(0deg) translateZ(144px) ;
+			/*background-color: rgba(238, 170, 170, 0.4);*/
+		}
+		#carusel figure:nth-child(2){
+			transform: rotateY(72deg)  translateZ(144px);
+			/*background-color: rgba(206, 238, 170, 0.4);*/
+		}
+
+		#carusel figure:nth-child(3){
+			transform: rotateY(144deg) translateZ(144px);
+			/*background-color: rgba(114, 93, 124, 0.4);*/
+		}
+
+		#carusel figure:nth-child(4){
+			transform: rotateY(216deg) translateZ(144px);
+			/*background-color: rgba(124, 183, 164, 0.4);*/
+		}
+
+		#carusel figure:nth-child(5){
+			transform: rotateY(288deg) translateZ(144px);
+			/*background-color: rgba(214, 213, 154, 0.4);*/
+		}
+
+		.button{
+			width: 15px;
+			height: 15px;
+			background-color: #000000b3;
+			border-radius: 20px;
+			display: inline-block;
+			position: relative;
+			top: 360px;
+			left: 66px;
+			margin: 0 5px;
+			z-index: 1;
+		}
+
+		#a1:focus ~#carusel{
+			transform: rotateY(0deg);
+		}
+
+		#a2:focus ~#carusel{
+			transform: rotateY(-72deg);
+		}
+
+		#a3:focus ~#carusel{
+			transform: rotateY(-144deg);
+		}
+
+		#a4:focus ~#carusel{
+			transform: rotateY(-216deg);
+		}
+
+		#a5:focus ~#carusel{
+			transform: rotateY(-288deg);
+		}
+
+		
+	</style>
+</head>cd
+
+<body>
+
+<section class="container">
+	<a href="#" class="button" id="a1"></a>
+	<a href="#" class="button" id="a2"></a>
+	<a href="#" class="button" id="a3"></a>
+	<a href="#" class="button" id="a4"></a>
+	<a href="#" class="button" id="a5"></a>
+
+	<div id="carusel">
+		<figure><img src="https://thumb9.shutterstock.com/mosaic_250/1723897/294933932/stock-vector-round-shiny-frame-background-with-light-bursts-technology-background-vector-eps-294933932.jpg"></figure>
+		<figure><img src="http://akvis.com/img/examples/lightshop/elements/light-spots-count-10.jpg"></figure>
+		<figure><img src="https://image.architonic.com/img_pro1-6/120/6045/light-ring-wall-1488m1m-sq.jpg"></figure>
+		<figure><img src="https://image.architonic.com/img_pro1-6/140/9427/lane-linear-72-long-1-sq.jpg"></figure>
+		<figure><img src="https://image.architonic.com/img_pro1-6/134/2240/light-ring-xxl-1559-sq.jpg"></figure>
+	</div>
+</section>
+</body>
+</html>
